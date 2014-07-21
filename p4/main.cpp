@@ -11,22 +11,22 @@
 using namespace std;
 
 int main () {
-    int num1;
-    int num2;
-    int product;
-    int answer;
-    for(num1=1; num1<999; num1++){
-        for(num2=num1; num2<999; num2++){
-            product=num1*num2;
-            std::string s;
-            std::stringstream out;
-            out << product;
-            s = out.str();
-        }
-    }
-    cout << "The answer is " << s <<"\n";
-    return 0;
+  int num1;
+  int num2;
+  int product;
+  int answer;
+  for(num1=999; num1>99; num1--){
+    for(num2=num1; num2>99; num2--){
+      product=num1*num2;
+      string String = static_cast<ostringstream*>( &(ostringstream() << product) )->str();
+      for (std::string::size_type l = 0; l < String.length(); ++l) {
+        if (String[l]==String[String.length()-l) {
 
+      }
+    }
+  }
+  cout << "The answer is " << s <<"\n";
+  return 0;
 }
 /*
 */
